@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Contact </title>
+    <meta name="description" content="Contact">
+    <meta name="author" content=" IH">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/style.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+      <script src="js/scripts.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <header class="header">
+        <h1 class="logo ">Cool Projects</h1>
+          <ul class="main-nav">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../about/index.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </header> 
+    
+    <article class="col-12">
+      <br>
+      <h3>Contact Form</h3>
+      <form class="row g-3 container" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First Name</label>
+          <input type="text" id="fname" class="form-control" id="validationCustom01" value="" required placeholder="Your First Name..">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          
+          <label for="validationCustom02" class="form-label">Last Name</label>
+          <input type="text" id="lname" class="form-control" id="validationCustom02" value="" required placeholder="Your Last Name..">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustomUsername" class="form-label">Email</label>
+          <div class="input-group has-validation">
+            <input type="text" id="fname"class="form-control col-8" placeholder="Your Email" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <span class="input-group-text" id="fname">@</span>
+            <input type="text" id="fname"class="form-control col-md-4" placeholder="domain.com"id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="col-md-8">
+          <label for="validationTextarea" class="form-label">Subject</label>
+          <textarea id="fname" class="form-control " id="validationTextarea" placeholder="Why you are reaching out..." style="height:200px;"required></textarea>
+          <div class="invalid-feedback">
+            Please enter a message in the textarea.
+          </div>
+          <div class="valid-feedback">
+              Looks good!
+          </div>
+          <input type="submit" id="submit" value="Send Intergalactic Message">
+          <div class="col-md-8">Map
+          </div>
+        </div>
+        
+        <div class ="map col-md-8">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26373824.88198861!2d-113.76486128383928!3d36.20398725454621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sus!4v1645134876192!5m2!1sen!2sus" width="100%" height="350" style="border:0; " allowfullscreen="" loading="lazy"></iframe>
+        </div>  
+      </form>
+
+       <!-- Old Unfactored code that needs refactoring -->
+      <!-- <div class="container col-lg-6">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+          <br>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <br>
+          <label for="Planet">Planet</label>
+          
+          <select id="Planet" name="Planet">
+            <option value="Earth">Earth</option>
+            <option value="Mars">Mars</option>
+            <option value="Sun">Sun</option>
+          </select>
+          <br>
+          <label for="subject">Subject</label> <br>
+          <textarea id="subject" name="subject" placeholder="Why you are reaching out.." style="height:500px; width: 700px;"></textarea>
+          <br>
+          <input type="submit" id="submit" value="Send Intergalactic Message">
+        </form>
+        
+
+
+        
+      </div>
+      <div class ="map col-md-10">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26373824.88198861!2d-113.76486128383928!3d36.20398725454621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sus!4v1645134876192!5m2!1sen!2sus" width="100%" height="350" style="border:0; " allowfullscreen="" loading="lazy"></iframe>
+      </div>   -->
+      <footer>
+        Ing © 2022 Copyright
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </footer>
+      
+      <script src="js/scripts.js"></script>
+    </body>
+
+  </html>

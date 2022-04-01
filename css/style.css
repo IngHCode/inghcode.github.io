@@ -1,0 +1,231 @@
+
+/* Links to fonts used */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Crete+Round|Open+Sans');
+
+html{height: 100%;
+background-size:cover;
+background-repeat: no-repeat;
+position:  inherit;
+overflow: scroll ;/* To enable the scroll effect */
+ background: url(img/galaxy.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Navigation bar */
+nav{
+   position: sticky;
+   display: block;
+   width: 100%;
+   top:0;
+}
+nav li{
+  List-style-type: none;
+  display: inline-block;
+  padding: 0.5em;
+  text-align: center;
+  
+}
+
+nav ul{
+  text-align: center;
+  align-items: center;
+  position: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, rgb(106, 226, 226,.1), black);
+  
+}
+
+@media screen and (max-width: 600px) {
+  .main-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column
+}
+
+}
+
+#logo:hover{
+  font-size: 1.5em;
+  color: #fff;
+}
+
+
+#title{text-align: center;}
+h1{
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px black;
+}
+
+h3{
+  text-align: center;
+  text-shadow: 1px 1px 5px black;
+}
+
+body{
+  padding: 10px 30px 30px 30px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff; line-height: 1.3em;
+
+}
+
+
+a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px  15px;
+  border-radius: 5px;
+}
+a:visited{color: #aaa;}
+
+
+a.tag >span {width: 200px; float: left;
+  color: rgba(255,255,255,.7);
+  padding: 10px 10px 10px 20px;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,.6);
+  position: absolute;
+  font-weight: bold;
+
+}
+
+
+
+
+article{
+  margin: 0 20px 0 160px;
+  color: rgba(255,255,255,.7);
+  padding: 30px;
+  border-radius: 20px;
+
+}
+.container{
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+
+  
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  overflow: auto;
+ 
+}
+
+.neon_text{
+  text-shadow: -2px -2px 10px #00b4ff,
+  2px 2px 10px #00b4ff,
+  0 0 20px #00b4ff,
+  0 0 40px #00b4ff,
+  0 0 60px #00b4ff,
+  0 0 80px #00b4ff;
+}
+
+.neon_text{margin: 0 0 1em 0; list-style: none; padding-left: 0;text-decoration: none;
+position: fixed;top: 750px;left:1500px;}
+
+a.planet> span em {
+  font-style: italic;
+  margin-top: 13px;
+  color: rgba(255,255,255,.5);
+  display: none;
+}
+
+a.planet >span {width: 200px; float: left;
+  color: rgba(255,255,255,.7);
+  padding: 10px 10px 10px 20px;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,.6);
+  position: absolute;
+  font-weight: bold;
+
+}
+a.planet:hover > span { background-color: rgba(0,0,0,.6);
+  text-shadow: -2px -2px 10px #00b4ff,
+  2px 2px 10px #00b4ff,
+  0 0 20px #00b4ff,
+  0 0 40px #00b4ff,
+  0 0 60px #00b4ff,
+  0 0 80px #00b4ff;
+}
+
+a.planet:hover > span em{display: block;
+  text-shadow: none;
+}
+
+/* Planets arrangement */
+a#p1 { position: absolute; top :20%; left: -250%;
+ transform: translateZ(-8px)scale(8);}
+a#p2 { position: absolute;top : 80%; left: 55%;
+  transform: translateZ(-8px)scale(10)}
+a#p3 { position: absolute; top : 80%; left: 273%;
+  transform: translateZ(-6px)scale(5)}
+a#p4 { position: absolute;top : 90%; left: -30%;
+  transform: translateZ(-5px)scale(4)}
+a#p5 { position: absolute;top : 30%; left: -20%;
+  transform: translateZ(-1.7px)scale(3)}
+a#p6 { position: absolute;top : 92%; left: 45%;
+  transform: translateZ(-1.6px)scale(2)}
+a#p7 { position: absolute;top : 90%; left: 90%;
+  transform: translateZ(-1px)scale(2.52)}
+a#p8 { position: absolute;top : 90%; left: 3%;
+  transform: translateZ(-0.5px)scale(1.5)}
+a#p9 { position: absolute;top : 88%;left: 90%;
+  transform: translateZ(-0.1px)scale(3)}
+
+
+/* Footer */
+footer{
+  color: white;
+  width: 100%;
+  height: 50px;
+  align-items: left;
+  text-align : left;
+  background-position: center;
+  text-shadow: -2px -2px 10px #00b4ff,
+  2px 2px 10px #00b4ff,
+  0 0 20px #00b4ff,
+  0 0 40px #00b4ff,
+  0 0 60px #00b4ff,
+  0 0 80px #00b4ff;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  position: sticky;top : 2000px; left: 10px
+}
+
+footer.a.planet:hover > span em{display: block;
+}
+
+/* Social Tags */
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  text-decoration: none;
+  color: white;
+}
+.fa-instagram {
+  
+  color: white;
+  text-decoration: none;
+}
